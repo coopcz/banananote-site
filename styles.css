@@ -528,7 +528,16 @@ body {
     transform: translateY(-5px);
 }
 
-.store-button img {
+.ios-download-button {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.ios-download-button:hover {
+    transform: translateY(-5px);
+}
+
+.ios-download-button svg {
     height: 60px;
     border-radius: 12px;
 }
@@ -640,11 +649,7 @@ body {
         gap: 1rem;
     }
     
-    .hero-stats {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-    }
+
     
     .phone-frame {
         width: 240px;
@@ -660,17 +665,14 @@ body {
         text-align: center;
     }
     
-    .about-stats {
-        justify-content: center;
-    }
+
     
     .feature-showcase {
         grid-template-columns: 1fr;
     }
     
     .download-buttons {
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
     
     .download-info {
