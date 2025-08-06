@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Banananote</title>
+    <meta name="description" content="Get in touch with the Banananote team. We're here to help with any questions about our AI-powered note-taking app.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍌</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                    <span class="logo">🍌</span>
+                    <span class="brand-name">Banananote</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="index.html#download" class="btn btn-primary">Download</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">
+                Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Contact Information -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 3rem; align-items: start;">
+                <div>
+                    <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Get in Touch</h2>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 2rem; line-height: 1.6;">
+                        Whether you have a question about features, pricing, need technical support, or anything else, our team is ready to answer all your questions.
+                    </p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                📧
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.2rem; margin-bottom: 0.25rem;">Email Support</h3>
+                                <p style="color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                    <a href="mailto:support@crescentdevelopments.org" style="color: #667eea; text-decoration: none;">support@crescentdevelopments.org</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                💬
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.2rem; margin-bottom: 0.25rem;">Response Time</h3>
+                                <p style="color: rgba(255, 255, 255, 0.7); margin: 0;">We typically respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                🌍
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.2rem; margin-bottom: 0.25rem;">Global Support</h3>
+                                <p style="color: rgba(255, 255, 255, 0.7); margin: 0;">Available worldwide, 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">Send us a Message</h3>
+                    
+                    <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" class="form-input" required>
+                                <option value="">Select a subject</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Technical Support">Technical Support</option>
+                                <option value="Bug Report">Bug Report</option>
+                                <option value="Feature Request">Feature Request</option>
+                                <option value="Billing Question">Billing Question</option>
+                                <option value="Privacy Concern">Privacy Concern</option>
+                                <option value="Partnership">Partnership</option>
+                                <option value="Press Inquiry">Press Inquiry</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Please describe your question or concern in detail..." required></textarea>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: rgba(255, 255, 255, 0.8);">
+                                <input type="checkbox" id="privacy-consent" style="width: auto; margin: 0;" required>
+                                <span style="font-size: 0.9rem;">I agree to the <a href="privacy.html" style="color: #667eea; text-decoration: none;">Privacy Policy</a> and <a href="terms.html" style="color: #667eea; text-decoration: none;">Terms of Service</a></span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M2.5 10L17.5 10M17.5 10L12.5 5M17.5 10L12.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 3rem; margin-top: 3rem;">
+                <h2 style="font-size: 2rem; margin-bottom: 2rem; text-align: center;">Frequently Asked Questions</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: #667eea;">How does the AI transcription work?</h3>
+                        <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                            Banananote uses advanced AI models to convert your speech to text in real-time. Our technology supports multiple languages and adapts to different accents and speaking styles.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: #667eea;">Is my data secure and private?</h3>
+                        <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                            Yes! All your recordings are encrypted and stored securely. We never sell your data, and you have full control over your information. Read our <a href="privacy.html" style="color: #667eea;">Privacy Policy</a> for details.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: #667eea;">Can I use Banananote offline?</h3>
+                        <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                            You can record audio offline, but AI transcription and summarization require an internet connection. Recordings made offline will be processed when you're back online.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: #667eea;">What platforms does Banananote support?</h3>
+                        <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                            Banananote is available on iOS and Android. We also offer web access for premium subscribers to view and manage notes across all devices.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: #667eea;">How accurate is the transcription?</h3>
+                        <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                            Our AI achieves over 95% accuracy in ideal conditions. Accuracy may vary based on audio quality, background noise, accents, and speaking clarity.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: #667eea;">Can I cancel my subscription anytime?</h3>
+                        <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                            Absolutely! You can cancel your subscription at any time through your app store settings. You'll retain access to premium features until the end of your billing period.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Contact Methods -->
+            <div style="margin-top: 3rem; text-align: center;">
+                <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Other Ways to Reach Us</h2>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.5rem; min-width: 200px;">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Help Center</h3>
+                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; margin: 0;">Find answers to common questions</p>
+                    </div>
+                    
+                    <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.5rem; min-width: 200px;">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🐛</div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Bug Reports</h3>
+                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; margin: 0;">Report issues or unexpected behavior</p>
+                    </div>
+                    
+                    <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.5rem; min-width: 200px;">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">💡</div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Feature Requests</h3>
+                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; margin: 0;">Suggest new features and improvements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo">🍌</span>
+                        <span class="brand-name">Banananote</span>
+                    </div>
+                    <p class="footer-tagline">Your memory, amplified.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Product</h4>
+                        <a href="index.html#features" class="footer-link">Features</a>
+                        <a href="index.html#download" class="footer-link">Download</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Support</h4>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Help Center</a>
+                        <a href="#" class="footer-link">Status</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Legal</h4>
+                        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms.html" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Cookies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Banananote. All rights reserved. Made with 🍌 by Crescent Developments.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Enhanced contact form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const formData = new FormData(this);
+                    const data = {
+                        name: formData.get('name'),
+                        email: formData.get('email'),
+                        subject: formData.get('subject'),
+                        message: formData.get('message')
+                    };
+                    
+                    // Validation
+                    if (!data.name || !data.email || !data.subject || !data.message) {
+                        showNotification('Please fill in all required fields.', 'error');
+                        return;
+                    }
+                    
+                    if (!isValidEmail(data.email)) {
+                        showNotification('Please enter a valid email address.', 'error');
+                        return;
+                    }
+                    
+                    const privacyConsent = document.getElementById('privacy-consent');
+                    if (!privacyConsent.checked) {
+                        showNotification('Please agree to the Privacy Policy and Terms of Service.', 'error');
+                        return;
+                    }
+                    
+                    // Submit form
+                    submitContactForm(data);
+                });
+            }
+        });
+        
+        function submitContactForm(data) {
+            const submitButton = document.querySelector('.form-submit');
+            const originalText = submitButton.innerHTML;
+            
+            // Show loading state
+            submitButton.innerHTML = '<span>Sending...</span>';
+            submitButton.disabled = true;
+            
+            // Create mailto link as fallback
+            const emailBody = `Name: ${data.name}\nEmail: ${data.email}\nSubject: ${data.subject}\n\nMessage:\n${data.message}`;
+            const mailtoLink = `mailto:support@crescentdevelopments.org?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Simulate processing time, then open email client
+            setTimeout(() => {
+                // Open email client
+                window.location.href = mailtoLink;
+                
+                // Reset form
+                document.getElementById('contact-form').reset();
+                
+                // Reset button
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+                
+                // Show success message
+                showNotification('Email client opened! Please send the email to complete your request.', 'success');
+            }, 1500);
+        }
+        
+        function showNotification(message, type) {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'error' ? '#dc3545' : '#28a745'};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                font-weight: 500;
+                z-index: 10000;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+            `;
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Remove after 5 seconds
+            setTimeout(() => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 5000);
+        }
+    </script>
+    
+    <!-- Mobile responsive styles -->
+    <style>
+        @media (max-width: 768px) {
+            .page-content > .container > div:first-child {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+            
+            .page-content .contact-form {
+                margin: 0;
+            }
+            
+            .page-content div[style*="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;"] {
+                flex-direction: column !important;
+                align-items: center !important;
+                gap: 1rem !important;
+            }
+            
+            .page-content div[style*="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;"] {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem !important;
+            }
+        }
+    </style>
+</body>
+</html>
