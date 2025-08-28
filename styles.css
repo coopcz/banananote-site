@@ -25,10 +25,80 @@ body {
 
 /* Typography */
 .gradient-text {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #FFFF7D 0%, #FFD700 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/* Yellow accent colors */
+.yellow-accent {
+    color: #FFFF7D;
+}
+
+.yellow-bg {
+    background: #FFFF7D;
+    color: #000000;
+}
+
+.yellow-border {
+    border-color: #FFFF7D;
+}
+
+.yellow-gradient {
+    background: linear-gradient(135deg, #FFFF7D 0%, #FFD700 100%);
+}
+
+.yellow-glow {
+    box-shadow: 0 0 20px rgba(255, 255, 125, 0.3);
+}
+
+/* Logo styles */
+.logo-img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+.logo-img-small {
+    height: 24px;
+    width: auto;
+}
+
+.logo-img-large {
+    height: 60px;
+    width: auto;
+}
+
+/* App Store button styles */
+.app-store-button {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.app-store-button:hover {
+    transform: translateY(-3px);
+}
+
+.app-store-button img {
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.app-store-button-small img {
+    height: 40px;
+    width: auto;
+}
+
+.app-store-button-large img {
+    height: 80px;
+    width: auto;
 }
 
 /* Header */
@@ -77,7 +147,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #667eea;
+    color: #FFFF7D;
 }
 
 .mobile-menu-toggle {
@@ -110,14 +180,14 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #ffffff;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #FFFF7D 0%, #FFD700 100%);
+    color: #000000;
+    box-shadow: 0 4px 15px rgba(255, 255, 125, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    box-shadow: 0 8px 25px rgba(255, 255, 125, 0.6);
 }
 
 .btn-secondary {
@@ -153,9 +223,9 @@ body {
 
 .hero-badge {
     display: inline-block;
-    background: rgba(102, 126, 234, 0.1);
-    border: 1px solid rgba(102, 126, 234, 0.3);
-    color: #667eea;
+    background: rgba(255, 255, 125, 0.1);
+    border: 1px solid rgba(255, 255, 125, 0.3);
+    color: #FFFF7D;
     padding: 0.5rem 1rem;
     border-radius: 50px;
     font-size: 0.9rem;
@@ -196,7 +266,7 @@ body {
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #667eea;
+    color: #FFFF7D;
 }
 
 .stat-label {
@@ -274,7 +344,7 @@ body {
 
 .wave-bar {
     width: 6px;
-    background: linear-gradient(to top, #667eea, #764ba2);
+    background: linear-gradient(to top, #FFFF7D, #FFD700);
     border-radius: 3px;
     animation: wave 1.5s ease-in-out infinite;
 }
@@ -296,7 +366,7 @@ body {
     position: relative;
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #FFFF7D 0%, #FFD700 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -311,7 +381,7 @@ body {
     left: -10px;
     right: -10px;
     bottom: -10px;
-    border: 2px solid #667eea;
+    border: 2px solid #FFFF7D;
     border-radius: 50%;
     animation: pulse 2s infinite;
 }
@@ -450,8 +520,8 @@ body {
 }
 
 .check-icon {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #FFFF7D 0%, #FFD700 100%);
+    color: #000000;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -597,7 +667,7 @@ body {
 .footer-title {
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #667eea;
+    color: #FFFF7D;
 }
 
 .footer-link {
@@ -631,6 +701,14 @@ body {
     
     .mobile-menu-toggle {
         display: flex;
+    }
+    
+    .app-store-button img {
+        height: 40px !important;
+    }
+    
+    .app-store-button-large img {
+        height: 60px !important;
     }
     
     .hero .container {
@@ -766,7 +844,7 @@ body {
 
 .form-input:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #FFFF7D;
     background: rgba(255, 255, 255, 0.15);
 }
 
@@ -805,13 +883,13 @@ body {
 .legal-content h2 {
     font-size: 1.8rem;
     margin: 2rem 0 1rem;
-    color: #667eea;
+    color: #FFFF7D;
 }
 
 .legal-content h3 {
     font-size: 1.4rem;
     margin: 1.5rem 0 0.75rem;
-    color: #8a9cfc;
+    color: #FFFF7D;
 }
 
 .legal-content p {
@@ -834,7 +912,7 @@ body {
 }
 
 .legal-content a {
-    color: #667eea;
+    color: #FFFF7D;
     text-decoration: none;
 }
 
